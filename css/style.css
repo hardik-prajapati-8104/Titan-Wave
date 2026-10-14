@@ -146,7 +146,7 @@ button,input,textarea,select{font-family:inherit;font-size:inherit}
 .split-img::before{content:"";position:absolute;left:0;bottom:0;width:70%;height:75%;border:3px solid var(--gold);border-radius:var(--radius);z-index:0}
 .split-img img{position:relative;z-index:1;border-radius:var(--radius);box-shadow:var(--shadow-lg);width:100%;object-fit:cover}
 .split-img.flip{padding:0 40px 40px 0}.split-img.flip::before{left:auto;right:0}
-.badge-exp{position:absolute;z-index:2;right:-10px;top:30px;background:var(--gold);color:#fff;padding:22px 26px;border-radius:var(--radius);text-align:center;box-shadow:var(--shadow-lg)}
+.badge-exp{position:absolute;z-index:2;right:-10px;top:-66px;background:var(--gold);color:#fff;padding:22px 26px;border-radius:var(--radius);text-align:center;box-shadow:var(--shadow-lg)}
 .badge-exp b{display:block;font-size:40px;line-height:1;font-weight:700}
 .badge-exp span{font-size:12px;letter-spacing:.1em;text-transform:uppercase}
 .ticks{display:grid;gap:12px;margin:24px 0 34px}
