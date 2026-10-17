@@ -19,13 +19,62 @@
   window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
   if (totop) totop.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
 
-  // Mobile menu
-  var burger = $('.burger'), nav = $('.nav');
+  // Mobile menu (burger, backdrop, Pages accordion, scroll-lock, Esc / outside-click / resize close)
+  var burger = $('.burger'), nav = $('.nav'), MQ = 991;
   if (burger && nav) {
-    burger.addEventListener('click', function () {
-      var o = nav.classList.toggle('open');
-      burger.setAttribute('aria-expanded', o ? 'true' : 'false');
+    var backdrop = document.createElement('div');
+    backdrop.className = 'nav-backdrop';
+    document.body.appendChild(backdrop);
+
+    var setSub = function (li, open) {
+      var link = $('a', li);
+      li.classList.toggle('sub-open', open);
+      if (link) link.setAttribute('aria-expanded', open ? 'true' : 'false');
+    };
+    var closeSubs = function () { $$('.nav>li.sub-open').forEach(function (li) { setSub(li, false); }); };
+    var fit = function () {
+      // size the panel to the space actually left under the header, so it scrolls inside itself on short screens
+      var h = header ? header.getBoundingClientRect().bottom : 72;
+      nav.style.setProperty('--nav-max', Math.max(window.innerHeight - Math.max(h, 0), 200) + 'px');
+    };
+    var openMenu = function () {
+      fit();
+      nav.classList.add('open'); backdrop.classList.add('show');
+      document.body.classList.add('menu-open');
+      burger.setAttribute('aria-expanded', 'true');
+    };
+    var closeMenu = function (focusBurger) {
+      nav.classList.remove('open'); backdrop.classList.remove('show');
+      document.body.classList.remove('menu-open');
+      burger.setAttribute('aria-expanded', 'false');
+      closeSubs();
+      if (focusBurger) burger.focus();
+    };
+    var isOpen = function () { return nav.classList.contains('open'); };
+
+    burger.addEventListener('click', function () { isOpen() ? closeMenu() : openMenu(); });
+    backdrop.addEventListener('click', function () { closeMenu(); });
+
+    // "Pages" opens/closes its sub-menu on small screens; any other link closes the menu
+    $$('.nav>li').forEach(function (li) {
+      if (!$('.sub', li)) return;
+      li.classList.add('has-sub');
+      $('a', li).addEventListener('click', function (e) {
+        if (window.innerWidth > MQ) return;
+        e.preventDefault();
+        var willOpen = !li.classList.contains('sub-open');
+        closeSubs(); setSub(li, willOpen);
+      });
     });
+    nav.addEventListener('click', function (e) {
+      var a = e.target.closest ? e.target.closest('a') : null;
+      if (!a || window.innerWidth > MQ) return;
+      if (a.parentNode.classList.contains('has-sub') && a.parentNode.firstElementChild === a) return;
+      closeMenu();
+    });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && isOpen()) closeMenu(true); });
+    window.addEventListener('resize', function () { if (window.innerWidth > MQ) closeMenu(); else if (isOpen()) fit(); });
+    window.addEventListener('orientationchange', function () { if (isOpen()) setTimeout(fit, 250); });
   }
 
   // Hero slider

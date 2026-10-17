@@ -1,0 +1,121 @@
+/* ===================================================================
+   SERVICES v2 — listing grid, pagination, detail page
+   (loaded after style.css; reuses the site's variables and components)
+   =================================================================== */
+
+/* ---------- Listing ---------- */
+.sv-toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px 28px;flex-wrap:wrap;margin-bottom:34px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.sv-total{margin:0;font-size:15px;color:var(--text)}
+.sv-total b{color:var(--gold);font-size:18px}
+#services{scroll-margin-top:90px}
+
+.svc-grid{align-items:stretch}
+.svc-card{display:flex;flex-direction:column;height:100%}
+.svc-card .svc-img{display:block;position:relative;background:var(--ivory)}
+.svc-card .svc-img img{display:block;width:100%;height:100%;object-fit:cover}
+.svc-card .svc-img::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(18,18,20,.35),transparent 55%);pointer-events:none}
+.svc-no{position:absolute;right:16px;top:14px;z-index:1;font-size:13px;font-weight:600;letter-spacing:.08em;color:#fff;background:rgba(18,18,20,.55);backdrop-filter:blur(4px);padding:5px 12px;border-radius:50px}
+.svc-card h3 a{color:inherit;transition:color .3s}
+.svc-card h3 a:hover{color:var(--gold)}
+.svc-card p{margin-bottom:20px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.svc-card .link-arrow{margin-top:auto}
+
+/* ---------- Pagination ---------- */
+.pager{align-items:center;flex-wrap:wrap}
+.pager a,.pager .off{width:46px;height:46px}
+.pager a{background:#fff}
+.pager a:hover,.pager a.on{background:var(--gold);border-color:var(--gold);color:#fff}
+.pager .off{display:grid;place-items:center;border:1px solid var(--line);border-radius:8px;color:#b9bec7;background:var(--ivory);cursor:not-allowed}
+.pager .gap{width:30px;text-align:center;color:#8a919d;font-weight:600}
+.pager .svg-i{width:18px;height:18px}
+
+/* ---------- Detail page ---------- */
+.sv-side{position:sticky;top:104px;align-self:start;max-height:calc(100vh - 124px);overflow-y:auto;overscroll-behavior:contain;padding-right:4px;scrollbar-width:thin;scrollbar-color:var(--gold) transparent}
+.sv-side::-webkit-scrollbar{width:5px}
+.sv-side::-webkit-scrollbar-thumb{background:var(--gold);border-radius:4px}
+.sv-side .widget{padding:24px 26px}
+.sv-side .widget h4{margin-bottom:14px}
+.sv-side .widget .list a{padding:10px 0}
+.sv-article{transition:opacity .25s ease}
+.sv-article.is-loading{opacity:.35;pointer-events:none}
+.sv-side .widget .list a{gap:12px;line-height:1.4;font-size:15px}
+.sv-side .widget .list a .svg-i{flex:none;width:16px;height:16px;transition:transform .3s var(--ease)}
+.sv-side .widget .list a:hover .svg-i,.sv-side .widget .list a.active .svg-i{transform:translateX(4px)}
+.sv-side .widget .list a.active{font-weight:600;border-left:3px solid var(--gold);padding-left:12px;background:linear-gradient(90deg,var(--gold-tint),transparent)}
+.sv-side .help-widget p{margin:0}
+
+.sv-hero{position:relative;margin:0 0 26px;box-shadow:var(--shadow-lg);border-radius:var(--radius);overflow:hidden}
+.sv-hero img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;background:var(--ivory)}
+.sv-badge{position:absolute;left:20px;bottom:20px;display:inline-flex;align-items:center;gap:8px;background:var(--gold);color:#fff;font-size:12.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:9px 18px;border-radius:50px;box-shadow:0 8px 22px rgba(217,11,18,.35)}
+.sv-badge .svg-i{width:16px;height:16px}
+
+.sv-meta{display:flex;flex-wrap:wrap;gap:10px 26px;padding-bottom:20px;margin-bottom:24px;border-bottom:1px solid var(--line);font-size:14px;color:#6b7280}
+.sv-meta span{display:inline-flex;align-items:center;gap:8px}
+.sv-meta .svg-i{color:var(--gold);width:18px;height:18px}
+.sv-meta b{color:var(--ink);font-weight:600}
+
+.sv-article .sv-title{font-size:clamp(26px,3.4vw,36px);line-height:1.25;margin:0 0 18px}
+.sv-article p{line-height:1.85}
+.sv-lead{font-size:18px;color:var(--ink);padding-left:20px;border-left:3px solid var(--gold)}
+.sv-article h3{position:relative;padding-bottom:12px;margin:44px 0 18px}
+.sv-article h3::after{content:"";position:absolute;left:0;bottom:0;width:46px;height:3px;background:var(--gold);border-radius:2px}
+
+/* stats strip */
+.sv-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin:32px 0 6px;background:var(--ink);border-radius:var(--radius);overflow:hidden}
+.sv-stats div{padding:26px 18px;text-align:center;border-right:1px solid rgba(255,255,255,.1)}
+.sv-stats div:last-child{border-right:0}
+.sv-stats b{display:block;font-size:clamp(24px,3vw,34px);line-height:1.15;color:var(--gold-light);font-weight:700}
+.sv-stats span{display:block;margin-top:6px;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:#c4cad4}
+
+/* features: two-column checklist */
+.article .benefits.sv-features{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 28px;margin:6px 0}
+.sv-features li{background:var(--ivory);border:1px solid var(--line);border-radius:8px;padding:14px 16px;align-items:center;transition:all .3s var(--ease)}
+.sv-features li:hover{border-color:var(--gold);transform:translateY(-2px);box-shadow:var(--shadow)}
+.sv-features .svg-i{flex:none;width:18px;height:18px;margin-top:0;color:#fff;background:var(--gold);border-radius:50%;padding:3px}
+.sv-features span{font-weight:500;color:var(--ink);font-size:15px;line-height:1.5}
+
+/* process timeline */
+.sv-steps{list-style:none;margin:6px 0 0;padding:0;display:grid;gap:0;position:relative}
+.sv-steps::before{content:"";position:absolute;left:22px;top:24px;bottom:24px;width:2px;background:var(--line)}
+.sv-steps li{position:relative;display:flex;gap:20px;align-items:flex-start;padding:0 0 26px}
+.sv-steps li:last-child{padding-bottom:0}
+.sv-n{position:relative;z-index:1;flex:none;width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:#fff;border:2px solid var(--gold);color:var(--gold);font-weight:700;transition:all .3s var(--ease)}
+.sv-steps li:hover .sv-n{background:var(--gold);color:#fff}
+.sv-steps h4{font-size:18px;margin:8px 0 4px}
+.sv-steps p{margin:0;font-size:15px;line-height:1.7}
+
+/* benefits */
+.sv-benefits{gap:20px;margin-top:6px}
+
+/* FAQ */
+.sv-faq{display:grid;gap:12px}
+.sv-faq details{border:1px solid var(--line);border-radius:var(--radius);background:#fff;transition:all .3s var(--ease)}
+.sv-faq details[open]{border-color:var(--gold);box-shadow:var(--shadow)}
+.sv-faq summary{display:flex;justify-content:space-between;align-items:center;gap:16px;cursor:pointer;list-style:none;padding:18px 22px;font-weight:600;color:var(--ink);font-size:16px;line-height:1.45}
+.sv-faq summary::-webkit-details-marker{display:none}
+.sv-faq summary .svg-i{flex:none;width:20px;height:20px;color:var(--gold);transition:transform .3s var(--ease)}
+.sv-faq details[open] summary .svg-i{transform:rotate(45deg)}
+.sv-faq details p{margin:0;padding:0 22px 20px;font-size:15px;line-height:1.8}
+
+/* actions + prev/next */
+.sv-actions{display:flex;flex-wrap:wrap;gap:14px;margin:44px 0 40px}
+.sv-pn{margin-bottom:0}
+.sv-pn a{height:100%}
+.sv-pn small .svg-i{width:14px;height:14px}
+
+@media (max-width:1100px){
+  .sv-side{position:static;max-height:none;overflow:visible;padding-right:0}
+}
+
+@media (max-width:760px){
+  .sv-toolbar{flex-direction:column;align-items:stretch}
+  .sv-total{text-align:center}
+  .sv-toolbar .bl-search{width:100%}
+  .sv-stats{grid-template-columns:minmax(0,1fr)}
+  .sv-stats div{border-right:0;border-bottom:1px solid rgba(255,255,255,.1);padding:20px 18px}
+  .sv-stats div:last-child{border-bottom:0}
+  .article .benefits.sv-features{grid-template-columns:minmax(0,1fr)}
+  .sv-badge{left:14px;bottom:14px;font-size:11.5px;padding:7px 14px}
+  .sv-actions .btn{width:100%;justify-content:center}
+  .pager a,.pager .off{width:42px;height:42px}
+}

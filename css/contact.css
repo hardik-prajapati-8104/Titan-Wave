@@ -1,0 +1,80 @@
+/* ===================================================================
+   CONTACT page — redesigned, fully responsive
+   ≥992px : 3 info cards in a row · form + map side by side
+   ≤991px : info cards stack as horizontal rows · form then map
+   ≤640px : compact padding, 16px inputs (no iOS zoom), full-width button
+   =================================================================== */
+.ct-top{padding-bottom:50px}
+.ct-main{padding-top:70px}
+
+/* ---------- info cards ---------- */
+.ct-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.ct-card{display:block;color:inherit;height:100%;position:relative;overflow:hidden}
+.ct-card::after{content:"";position:absolute;left:0;bottom:0;width:100%;height:3px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease)}
+.ct-card:hover::after{transform:scaleX(1)}
+.ct-card h4{margin-bottom:8px}
+.ct-card p{line-height:1.7;overflow-wrap:anywhere}
+.ct-act{display:inline-block;margin-top:14px;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--gold)}
+.ct-act::after{content:" →"}
+.ct-card:hover{color:inherit}
+
+/* ---------- form + map ---------- */
+.ct-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:40px;align-items:stretch}
+.ct-form{height:100%}
+.ct-form h2{font-size:32px;font-weight:700;margin:6px 0 10px}
+.ct-form>p{margin-bottom:26px}
+.ct-form label.f i{color:var(--gold);font-style:normal}
+.ct-form .input{font:inherit;font-size:15px;min-height:50px}
+.ct-form textarea.input{min-height:150px}
+.ct-form select.input{appearance:none;-webkit-appearance:none;cursor:pointer;padding-right:44px;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23d90b12' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 16px center}
+.ct-form .input::placeholder{color:#9aa1ad}
+.ct-submit{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.ct-submit small{color:#8a919d;font-size:13px;line-height:1.5;flex:1 1 200px}
+
+.ct-side{display:flex;flex-direction:column;gap:20px;min-width:0}
+.ct-map{flex:1;position:relative;min-height:380px;height:auto}
+.ct-map iframe{position:absolute;inset:0;width:100%;height:100%;min-height:0}
+.ct-hours{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;background:#fff;border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:var(--radius);padding:20px 24px;box-shadow:var(--shadow)}
+.ct-hours h4{font-size:17px;margin-bottom:4px}
+.ct-hours p{margin:0;font-size:14.5px;line-height:1.7}
+
+/* ---------- tablet ---------- */
+@media (max-width:991px){
+  .ct-top{padding-bottom:30px}
+  .ct-main{padding-top:56px}
+  .ct-cards{grid-template-columns:minmax(0,1fr);gap:16px;max-width:640px;margin:0 auto}
+  .ct-card.info-card{display:flex;align-items:center;gap:20px;text-align:left;padding:22px 24px}
+  .ct-card.info-card .ico{margin:0;flex:none;width:60px;height:60px}
+  .ct-card .ct-act{margin-top:8px}
+  .ct-card:hover{transform:none}
+  .ct-grid{grid-template-columns:minmax(0,1fr);gap:30px;max-width:720px;margin:0 auto}
+  .ct-map{min-height:340px}
+}
+
+/* ---------- phones ---------- */
+@media (max-width:640px){
+  .ct-card.info-card{padding:18px 18px;gap:16px}
+  .ct-card.info-card .ico{width:52px;height:52px}
+  .ct-card h4{font-size:17px;margin-bottom:4px}
+  .ct-card p{font-size:14px}
+  .ct-main{padding-top:44px}
+  .ct-form.form-box{padding:28px 20px 26px;border-top-width:4px}
+  .ct-form h2{font-size:25px}
+  .ct-form>p{font-size:14.5px;margin-bottom:20px}
+  .ct-form .form-grid{grid-template-columns:minmax(0,1fr);gap:16px}
+  .ct-form .input{font-size:16px;padding:13px 16px}   /* 16px stops iOS zooming into fields */
+  .ct-submit{flex-direction:column;align-items:stretch;gap:12px}
+  .ct-submit .btn{width:100%;justify-content:center;min-height:52px}
+  .ct-submit small{text-align:center;flex:none}
+  .ct-map{min-height:280px}
+  .ct-hours{padding:18px 20px}
+  .ct-hours .btn{width:100%;justify-content:center}
+}
+
+@media (max-width:359px){
+  .ct-card.info-card{flex-direction:column;text-align:center}
+  .ct-form.form-box{padding:24px 14px}
+  .ct-form h2{font-size:22px}
+}

@@ -1,130 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+	include_once ('include/blog-data.php');
+	include_once ('elements/header.php');
+?>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Professional Business Consulting & Global Growth Solutions | TITAN WAVE</title>
-    <meta name="description" content="Titan Wave is a professional business consultancy offering strategy, international expansion, market research and financial planning services.">
-    <meta name="theme-color" content="#d90b12">
-    <link rel="icon" type="image/png" href="images/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-
-    <a class="skip" href="#main">Skip to content</a>
-
-    <div class="preloader"><i></i></div>
-
-    <div class="topbar">
-        <div class="container">
-
-            <ul>
-
-                <li>
-                    <svg class="svg-i " viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                        <circle cx="12" cy="10" r="3" />
-                    </svg> 
-                    Manhattan, New York, USA
-                </li>
-
-                <li>
-                    <svg class="svg-i " viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" />
-                    </svg> 
-                    <a href="tel:+18001234567">+1 (800) 123-4567</a>
-                </li>
-
-                <li>
-                    <svg class="svg-i " viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z" />
-                        <polyline points="22,6 12,13 2,6" />
-                    </svg> 
-                    <a href="mailto:info@thetitanwave.com">info@thetitanwave.com</a>
-                </li>
-
-            </ul>
-
-            <div class="social">
-                <a href="#" aria-label="LinkedIn">
-                    <svg class="svg-i " viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-                        <rect x="2" y="9" width="4" height="12" />
-                        <circle cx="4" cy="4" r="2" />
-                    </svg>
-                </a>
-
-                <a href="#" aria-label="Facebook">
-                    <svg class="svg-i " viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-                    </svg>
-                </a>
-
-                <a href="#" aria-label="X">
-                    <svg class="svg-i " viewBox="0 0 24 24" aria-hidden="true">
-                        <line x1="4" y1="4" x2="20" y2="20" />
-                        <line x1="20" y1="4" x2="4" y2="20" />
-                    </svg>
-                </a>
-
-                <a href="#" aria-label="Instagram">
-                    <svg class="svg-i " viewBox="0 0 24 24"
-                        aria-hidden="true">
-                        <rect x="2" y="2" width="20" height="20" rx="5" />
-                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                    </svg>
-                </a>
-            </div>
-
-        </div>
-    </div>
-
-    <header class="header">
-
-        <div class="container">
-
-            <a class="logo" href="index.html" aria-label="Titan Wave home">
-                <img class="logo-img" src="images/logo.png" alt="Titan Wave" width="150" height="56">
-            </a>
-
-            <ul class="nav" id="nav">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="gallery.html">Projects</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li>
-
-                    <a href="javascript:void(0);" aria-haspopup="true">Pages 
-                        <svg class="svg-i " viewBox="0 0 24 24" aria-hidden="true">
-                            <polyline points="6 9 12 15 18 9" />
-                        </svg>
-                    </a>
-
-                    <div class="sub">
-                        <a href="faq.html">FAQ's</a>
-                        <a href="testimonial.html">Testimonials</a>
-                        <a href="privacy-policy.html">Privacy Policy</a>
-                        <a href="terms-conditions.html">Terms & Conditions</a>
-                    </div>
-
-                </li>
-
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-
-            <a href="contact.html" class="btn btn-gold btn-sm">Get a Quote</a>
-            <button class="burger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-
-        </div>
-        
-    </header>
     <main id="main">
         <section class="hero">
             <div class="hero-slide" style="background-image:url(images/main-slider/image-2.jpg)"></div>
@@ -136,16 +14,17 @@
                     <h1>Riding the Wave of <span>Business Success</span></h1>
                     <p>Titan Wave helps ambitious companies turn strategy into measurable growth with expert advisory,
                         global market access and tailored solutions.</p>
-                    <div class="hero-actions"><a href="services.html" class="btn btn-gold">Our Services <svg
+                    <div class="hero-actions"><a href="services.php" class="btn btn-gold">Our Services <svg
                                 class="svg-i " viewBox="0 0 24 24" aria-hidden="true">
                                 <line x1="5" y1="12" x2="19" y2="12" />
                                 <polyline points="12 5 19 12 12 19" />
-                            </svg></a><a href="contact.html" class="btn btn-outline">Contact Us</a></div>
+                            </svg></a><a href="contact.php" class="btn btn-outline">Contact Us</a></div>
                 </div>
             </div>
             <div class="hero-dots"><button aria-label="Slide 1"></button><button aria-label="Slide 2"></button><button
                     aria-label="Slide 3"></button></div>
         </section>
+
         <section class="strip">
             <div class="container">
                 <div class="strip-grid">
@@ -185,6 +64,7 @@
                 </div>
             </div>
         </section>
+
         <section class="section">
             <div class="container">
                 <div class="split">
@@ -209,7 +89,7 @@
                                     <polyline points="20 6 9 17 4 12" />
                                 </svg> Transparent, results-driven collaboration</li>
                         </ul>
-                        <a href="about.html" class="btn btn-gold">Discover More <svg class="svg-i " viewBox="0 0 24 24"
+                        <a href="about.php" class="btn btn-gold">Discover More <svg class="svg-i " viewBox="0 0 24 24"
                                 aria-hidden="true">
                                 <line x1="5" y1="12" x2="19" y2="12" />
                                 <polyline points="12 5 19 12 12 19" />
@@ -218,6 +98,7 @@
                 </div>
             </div>
         </section>
+
         <section class="section alt">
             <div class="container">
                 <div class="sec-head center rv"><span class="eyebrow">Our Services</span>
@@ -232,7 +113,7 @@
                         </div>
                         <h3>Business Strategy & Advisory</h3>
                         <p>Clear, data-backed roadmaps that align your vision, resources and market position for
-                            sustainable growth.</p><a class="link-arrow" href="services-single.html">Learn More <svg
+                            sustainable growth.</p><a class="link-arrow" href="services-single.php">Learn More <svg
                                 class="svg-i " viewBox="0 0 24 24" aria-hidden="true">
                                 <line x1="5" y1="12" x2="19" y2="12" />
                                 <polyline points="12 5 19 12 12 19" />
@@ -245,7 +126,7 @@
                         </div>
                         <h3>International Expansion</h3>
                         <p>Market-entry planning, partner sourcing and regulatory guidance to help you grow confidently
-                            across borders.</p><a class="link-arrow" href="services-single.html">Learn More <svg
+                            across borders.</p><a class="link-arrow" href="services-single.php">Learn More <svg
                                 class="svg-i " viewBox="0 0 24 24" aria-hidden="true">
                                 <line x1="5" y1="12" x2="19" y2="12" />
                                 <polyline points="12 5 19 12 12 19" />
@@ -257,7 +138,7 @@
                         </div>
                         <h3>Market Research & Analysis</h3>
                         <p>Actionable insight on customers, competitors and trends so every decision rests on solid
-                            evidence.</p><a class="link-arrow" href="services-single.html">Learn More <svg
+                            evidence.</p><a class="link-arrow" href="services-single.php">Learn More <svg
                                 class="svg-i " viewBox="0 0 24 24" aria-hidden="true">
                                 <line x1="5" y1="12" x2="19" y2="12" />
                                 <polyline points="12 5 19 12 12 19" />
@@ -270,7 +151,7 @@
                         </div>
                         <h3>Financial Planning & Investment</h3>
                         <p>Practical financial structuring, budgeting and investment advice built around your business
-                            objectives.</p><a class="link-arrow" href="services-single.html">Learn More <svg
+                            objectives.</p><a class="link-arrow" href="services-single.php">Learn More <svg
                                 class="svg-i " viewBox="0 0 24 24" aria-hidden="true">
                                 <line x1="5" y1="12" x2="19" y2="12" />
                                 <polyline points="12 5 19 12 12 19" />
@@ -283,7 +164,7 @@
                         </div>
                         <h3>Operations Optimization</h3>
                         <p>Streamline processes, reduce costs and raise productivity with lean, measurable operating
-                            models.</p><a class="link-arrow" href="services-single.html">Learn More <svg class="svg-i "
+                            models.</p><a class="link-arrow" href="services-single.php">Learn More <svg class="svg-i "
                                 viewBox="0 0 24 24" aria-hidden="true">
                                 <line x1="5" y1="12" x2="19" y2="12" />
                                 <polyline points="12 5 19 12 12 19" />
@@ -296,7 +177,7 @@
                         </div>
                         <h3>Partnerships & Networking</h3>
                         <p>Introductions to trusted partners, suppliers and investors across our international business
-                            network.</p><a class="link-arrow" href="services-single.html">Learn More <svg class="svg-i "
+                            network.</p><a class="link-arrow" href="services-single.php">Learn More <svg class="svg-i "
                                 viewBox="0 0 24 24" aria-hidden="true">
                                 <line x1="5" y1="12" x2="19" y2="12" />
                                 <polyline points="12 5 19 12 12 19" />
@@ -305,9 +186,10 @@
                 </div>
             </div>
         </section>
+
         <section class="stats" style="background-image:url(images/background/parallax2.jpg)">
             <div class="container">
-                <div class="grid g4">
+                <div class="grid g4 stats-grid">
                     <div class="stat rv"><b data-count="350" data-suffix="+">0</b><span>Projects Delivered</span></div>
                     <div class="stat rv"><b data-count="28" data-suffix="+">0</b><span>Countries Served</span></div>
                     <div class="stat rv"><b data-count="120" data-suffix="+">0</b><span>Happy Clients</span></div>
@@ -315,6 +197,7 @@
                 </div>
             </div>
         </section>
+
          <section class="section why">
             <div class="container">
                 <div class="sec-head center rv"><span class="eyebrow">Why Choose Us</span>
@@ -337,10 +220,11 @@
                 </div>
                 <div class="why-cta rv">
                     <p>Ready to experience the Titan Wave difference?</p>
-                    <a href="contact.html" class="btn btn-gold">Talk to an Advisor <svg class="svg-i" viewBox="0 0 24 24" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                    <a href="contact.php" class="btn btn-gold">Talk to an Advisor <svg class="svg-i" viewBox="0 0 24 24" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
                 </div>
             </div>
         </section>
+
         <section class="section alt process">
             <div class="container">
                 <div class="sec-head center rv"><span class="eyebrow">How We Work</span>
@@ -370,6 +254,7 @@
                 </div>
             </div>
         </section>
+
         <section class="section">
             <div class="container">
                 <div class="sec-head center rv"><span class="eyebrow">Our Work</span>
@@ -433,7 +318,9 @@
                     </a></div>
             </div>
         </section>
+
         <div class="lightbox"><button aria-label="Close">&times;</button><img alt=""></div>
+
         <section class="section alt">
             <div class="container">
                 <div class="sec-head center rv"><span class="eyebrow">Our Experts</span>
@@ -528,6 +415,7 @@
                 </div>
             </div>
         </section>
+
         <section class="section">
             <div class="container">
                 <div class="sec-head center rv"><span class="eyebrow">Testimonials</span>
@@ -628,6 +516,7 @@
                 </div>
             </div>
         </section>
+
         <section class="section alt">
             <div class="container">
                 <div class="sec-head center rv"><span class="eyebrow">Latest News</span>
@@ -635,17 +524,21 @@
                     <p>Fresh perspectives from our consultants on business, markets and growth.</p>
                 </div>
                 <div class="news-layout">
-<article class="nf rv big"><a class="nf-img" href="blog-single.html"><img src="images/resource/news-1.jpg" alt="How To Handle A Growing Business" loading="lazy"><span class="cat">Strategy</span></a>
-<div class="nf-body"><div class="nmeta"><span><svg class="svg-i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> Oct 12, 2026</span><span><svg class="svg-i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5 min read</span></div><h3><a href="blog-single.html">How To Handle A Growing Business</a></h3><p>Growth is the goal of every business, yet it brings stretched teams and strained cash flow. Learn how to plan for it before it arrives.</p>
-<div class="nf-foot"><div class="by"><img src="images/resource/author-1.jpg" alt="" loading="lazy"><span>Anna Peterson</span></div><a class="link-arrow" href="blog-single.html">Read Article <svg class="svg-i" viewBox="0 0 24 24" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div></div></article>
-<div class="news-side"><article class="nmini rv d1"><a class="nmini-img" href="blog-single.html"><img src="images/resource/news-2.jpg" alt="Do You Want To Start A Business?" loading="lazy"></a>
-<div><span class="cat-text">Startups</span><h4><a href="blog-single.html">Do You Want To Start A Business?</a></h4><div class="nmeta"><span><svg class="svg-i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> Sep 28, 2026</span><span><svg class="svg-i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 4 min read</span></div></div></article><article class="nmini rv d2"><a class="nmini-img" href="blog-single.html"><img src="images/resource/news-3.jpg" alt="Business Consulting and Preparation" loading="lazy"></a>
-<div><span class="cat-text">Consulting</span><h4><a href="blog-single.html">Business Consulting and Preparation</a></h4><div class="nmeta"><span><svg class="svg-i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> Sep 15, 2026</span><span><svg class="svg-i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 6 min read</span></div></div></article><article class="nmini rv d3"><a class="nmini-img" href="blog-single.html"><img src="images/resource/news-4.jpg" alt="Small Business Loans &amp; Funding Options" loading="lazy"></a>
-<div><span class="cat-text">Finance</span><h4><a href="blog-single.html">Small Business Loans &amp; Funding Options</a></h4><div class="nmeta"><span><svg class="svg-i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> Sep 03, 2026</span><span><svg class="svg-i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5 min read</span></div></div></article></div>
-</div>
-<div class="center rv" style="margin-top:48px"><a href="blog.html" class="btn btn-dark">View All Articles <svg class="svg-i" viewBox="0 0 24 24" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+                    <?php $__news = array_slice(array_values(blog_all()), 0, 4); $__f = $__news[0]; $__fa = blog_authors()[$__f['author']]; $__fu = blog_url($__f['slug']); ?>
+                    <article class="nf rv big"><a class="nf-img" href="<?= $__fu ?>"><?= blog_img_tag($__f, 1000) ?><span class="cat"><?= htmlspecialchars($__f['cat']) ?></span></a>
+                    <div class="nf-body"><div class="nmeta"><span><?= blog_icon('cal') ?> <?= blog_date($__f['date']) ?></span><span><?= blog_icon('clock') ?> <?= (int)$__f['read'] ?> min read</span></div><h3><a href="<?= $__fu ?>"><?= htmlspecialchars($__f['title']) ?></a></h3><p><?= htmlspecialchars($__f['excerpt']) ?></p>
+                    <div class="nf-foot"><div class="by"><img src="<?= $__fa['img'] ?>" alt="" loading="lazy"><span><?= htmlspecialchars($__f['author']) ?></span></div><a class="link-arrow" href="<?= $__fu ?>">Read Article <?= blog_icon('arrow') ?></a></div></div></article>
+                    <div class="news-side">
+                    <?php foreach (array_slice($__news, 1, 3) as $__i => $__p): $__u = blog_url($__p['slug']); ?>
+                        <article class="nmini rv d<?= $__i + 1 ?>"><a class="nmini-img" href="<?= $__u ?>"><?= blog_img_tag($__p, 400) ?></a>
+                        <div><span class="cat-text"><?= htmlspecialchars($__p['cat']) ?></span><h4><a href="<?= $__u ?>"><?= htmlspecialchars($__p['title']) ?></a></h4><div class="nmeta"><span><?= blog_icon('cal') ?> <?= blog_date($__p['date']) ?></span><span><?= blog_icon('clock') ?> <?= (int)$__p['read'] ?> min read</span></div></div></article>
+                    <?php endforeach; ?>
+                    </div>
+                </div>
+                <div class="center rv" style="margin-top:48px"><a href="blog.php" class="btn btn-dark">View All Articles <svg class="svg-i" viewBox="0 0 24 24" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
             </div>
         </section>
+
         <section class="section">
             <div class="container">
                 <div class="callback rv">
@@ -669,100 +562,9 @@
                 </div>
             </div>
         </section>
-    </main>
-    <footer class="footer">
-        <div class="footer-main">
-            <div class="container">
-                <div class="footer-grid">
-                    <div>
-                        <a class="logo" href="index.html" aria-label="Titan Wave home">
-                            <img class="logo-img" src="images/logo-footer.png" alt="Titan Wave" width="226" height="84" loading="lazy">
-                        </a>
-                        <p style="margin-top:22px">Titan Wave is a professional business consultancy helping
-                            organizations plan smarter, expand internationally and grow with confidence.</p>
-                        <div class="social"><a href="#" aria-label="LinkedIn"><svg class="svg-i " viewBox="0 0 24 24"
-                                    aria-hidden="true">
-                                    <path
-                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-                                    <rect x="2" y="9" width="4" height="12" />
-                                    <circle cx="4" cy="4" r="2" />
-                                </svg></a><a href="#" aria-label="Facebook"><svg class="svg-i " viewBox="0 0 24 24"
-                                    aria-hidden="true">
-                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-                                </svg></a><a href="#" aria-label="X"><svg class="svg-i " viewBox="0 0 24 24"
-                                    aria-hidden="true">
-                                    <line x1="4" y1="4" x2="20" y2="20" />
-                                    <line x1="20" y1="4" x2="4" y2="20" />
-                                </svg></a><a href="#" aria-label="Instagram"><svg class="svg-i " viewBox="0 0 24 24"
-                                    aria-hidden="true">
-                                    <rect x="2" y="2" width="20" height="20" rx="5" />
-                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                                </svg></a></div>
-                    </div>
-                    <div>
-                        <h4>Services</h4>
-                        <ul class="links">
-                            <li><a href="services-single.html">Business Strategy</a></li>
-                            <li><a href="services.html">International Expansion</a></li>
-                            <li><a href="services.html">Market Research</a></li>
-                            <li><a href="services.html">Financial Planning</a></li>
-                            <li><a href="services.html">Operations Consulting</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4>Quick Links</h4>
-                        <ul class="links">
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="gallery.html">Projects</a></li>
-                            <li><a href="testimonial.html">Testimonials</a></li>
-                            <li><a href="blog.html">Latest News</a></li>
-                            <li><a href="faq.html">FAQ's</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4>Get in Touch</h4>
-                        <ul class="contact">
-                            <li><svg class="svg-i " viewBox="0 0 24 24" aria-hidden="true">
-                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                                    <circle cx="12" cy="10" r="3" />
-                                </svg><span>Manhattan, New York, USA</span></li>
-                            <li><svg class="svg-i " viewBox="0 0 24 24" aria-hidden="true">
-                                    <path
-                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" />
-                                </svg><a href="tel:+18001234567">+1 (800) 123-4567</a></li>
-                            <li><svg class="svg-i " viewBox="0 0 24 24" aria-hidden="true">
-                                    <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z" />
-                                    <polyline points="22,6 12,13 2,6" />
-                                </svg><a href="mailto:info@thetitanwave.com">info@thetitanwave.com</a></li>
-                        </ul>
-                        <p style="margin:18px 0 0;color:#fff;font-weight:500">Subscribe to our newsletter</p>
-                        <form class="subscribe" data-demo><input type="email" placeholder="Your email address"
-                                aria-label="Email" required><button aria-label="Subscribe"><svg class="svg-i "
-                                    viewBox="0 0 24 24" aria-hidden="true">
-                                    <line x1="22" y1="2" x2="11" y2="13" />
-                                    <polygon points="22 2 15 22 11 13 2 9 22 2" />
-                                </svg></button></form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container"><span>&copy; 2026 <a href="index.html" style="color:var(--gold-light)">Titan
-                        Wave</a>. All rights reserved.</span>
-                <ul>
-                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                    <li><a href="terms-conditions.html">Terms &amp; Conditions</a></li>
-                    <li><a href="faq.html">FAQ's</a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-    <button class="totop" aria-label="Back to top"><svg class="svg-i " viewBox="0 0 24 24" aria-hidden="true">
-            <polyline points="18 15 12 9 6 15" />
-        </svg></button>
-    <script src="js/main.js"></script>
-</body>
 
-</html>
+    </main>
+
+<?php
+	include_once ('elements/footer.php')
+?>
