@@ -41,11 +41,11 @@ include_once('elements/header.php');
                             <span class="ct-act">Call now</span>
                         </div>
                     </a>
-                    <a class="info-card ct-card rv d3" href="mailto:info@thetitanwave.com">
+                    <a class="info-card ct-card rv d3" href="mailto: support@thetitanwave.com">
                         <div class="ico"><svg class="svg-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
                         <div class="ct-txt">
                             <h4>Email Us</h4>
-                            <p>info@thetitanwave.com<br>www.titanwave.com</p>
+                            <p> support@thetitanwave.com<br>www.titanwave.com</p>
                             <span class="ct-act">Send an email</span>
                         </div>
                     </a>

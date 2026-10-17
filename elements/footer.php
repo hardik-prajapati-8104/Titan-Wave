@@ -64,7 +64,7 @@
                             <li><svg class="svg-i " viewBox="0 0 24 24" aria-hidden="true">
                                     <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z" />
                                     <polyline points="22,6 12,13 2,6" />
-                                </svg><a href="mailto:info@thetitanwave.com">info@thetitanwave.com</a></li>
+                                </svg><a href="mailto: support@thetitanwave.com"> support@thetitanwave.com</a></li>
                         </ul>
                         <p style="margin:18px 0 0;color:#fff;font-weight:500">Subscribe to our newsletter</p>
                         <form class="subscribe" data-demo><input type="email" placeholder="Your email address"
