@@ -72,7 +72,7 @@
                         <div class="widget help-widget">
                             <h4>Need Help?</h4>
                             <p>Talk to a Titan Wave advisor about your requirements.</p><a class="big"
-                                href="tel:+18001234567">+1 (800) 123-4567</a><a href="contact.php"
+                                href="tel:+18001234567">+971569487710</a><a href="contact.php"
                                 class="btn btn-gold btn-sm">Request a Quote</a>
                         </div>
                     </aside>

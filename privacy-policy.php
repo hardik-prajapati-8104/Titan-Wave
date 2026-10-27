@@ -118,7 +118,7 @@
                                 <ul>
                                     <li><strong>Email:</strong> support@thetitanwave.com
                                     </li>
-                                    <li><strong>Phone:</strong> +1 (800) 123-4567</li>
+                                    <li><strong>Phone:</strong> +971569487710</li>
                                     <li><strong>Address:</strong>
                                         Manhattan, New York, USA</li>
                                 </ul>
