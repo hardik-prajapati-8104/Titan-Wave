@@ -63,7 +63,8 @@ include_once('elements/header.php');
                             <span class="eyebrow">Get In Touch</span>
                             <h2>Send Us a Message</h2>
                             <p>Fill in the form and our team will respond within one business day.</p>
-                            <form data-demo>
+                            <form action="sendemail.php" method="POST">
+                                <div aria-hidden="true" style="position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden"><label for="website">Leave this field empty</label><input id="website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
                                 <div class="form-grid">
                                     <div>
                                         <label class="f" for="n">Full Name <i>*</i></label>
@@ -101,7 +102,6 @@ include_once('elements/header.php');
                                     </div>
                                 </div>
                             </form>
-                            <div class="form-msg" role="status">Thank you! Your message has been received &mdash; we&rsquo;ll be in touch soon.</div>
                         </div>
                     </div>
 
