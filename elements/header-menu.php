@@ -9,12 +9,12 @@
 
             <ul>
 
-                <li>
-                    <svg class="svg-i " viewBox="0 0 24 24" aria-hidden="true">
+                <li style="font-size: 15px;">
+                    <svg class="svg-i " viewBox="0 0 24 24" aria-hidden="true" style="margin-bottom: 24px; font-size: larger;">
                         <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                         <circle cx="12" cy="10" r="3" />
                     </svg> 
-                    Manhattan, New York, USA
+                    IFZA Business Park, DDP, 45137 - 001, <br>A1 - 3641379065 Dubai Silicon Oasis Dubai, UAE
                 </li>
 
                 <li>

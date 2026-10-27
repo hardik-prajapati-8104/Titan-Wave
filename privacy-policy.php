@@ -120,7 +120,7 @@
                                     </li>
                                     <li><strong>Phone:</strong> +971569487710</li>
                                     <li><strong>Address:</strong>
-                                        Manhattan, New York, USA</li>
+                                        IFZA Business Park, DDP ,45137 - 001 ,A1 - 3641379065 Dubai Silicon Oasis, Dubai, UAE</li>
                                 </ul>
                             </div>
                         </div>
