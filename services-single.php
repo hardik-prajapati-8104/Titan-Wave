@@ -62,7 +62,7 @@ include_once('elements/header.php');
                         <div class="widget help-widget">
                             <h4>Need Help?</h4>
                             <p>Talk to a Titan Wave advisor about your requirements.</p>
-                            <a class="big" href="tel:+18001234567">+971569487710</a>
+                            <a class="big" href="tel:+971569487710">+971569487710</a>
                             <a href="contact.php" class="btn btn-gold btn-sm">Request a Quote</a>
                         </div>
                     </aside>
@@ -136,7 +136,7 @@ include_once('elements/header.php');
 
                         <div class="sv-actions">
                             <a href="contact.php" class="btn btn-gold">Request a Quote <?= svc_icon('arrow') ?></a>
-                            <a href="tel:+18001234567" class="btn btn-dark"><?= svc_icon('phone') ?> +971569487710</a>
+                            <a href="tel:+971569487710" class="btn btn-dark"><?= svc_icon('phone') ?> +971569487710</a>
                         </div>
 
                         <nav class="bl-pn sv-pn" aria-label="More services">
