@@ -25,7 +25,7 @@ include_once('elements/header.php');
                     <p>Questions about our services or ready to begin? Reach us any way that suits you.</p>
                 </div>
                 <div class="ct-cards">
-                    <a class="info-card ct-card rv d1" href="https://www.google.com/maps/search/?api=1&amp;query=Manhattan%2C+New+York%2C+USA" target="_blank" rel="noopener">
+                    <a class="info-card ct-card rv d1" href="https://www.google.com/maps/place/IFZA+Business+Park/@25.1186106,55.3777212,17z/data=!3m1!4b1!4m6!3m5!1s0x3e5f6f9f1fbfb607:0x4db0a2f5f59532d9!8m2!3d25.1186106!4d55.3777212!16s%2Fg%2F11h79rl5g_?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">
                         <div class="ico"><svg class="svg-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
                         <div class="ct-txt">
                             <h4>Visit Us</h4>
@@ -114,7 +114,7 @@ include_once('elements/header.php');
                                 <h4>Office Hours</h4>
                                 <p>Mon &ndash; Fri: 9:00 &ndash; 18:00<br>Sat &ndash; Sun: Closed</p>
                             </div>
-                            <a class="btn btn-dark btn-sm" href="https://www.google.com/maps/search/?api=1&amp;query=Manhattan%2C+New+York%2C+USA" target="_blank" rel="noopener">Open in Maps</a>
+                            <a class="btn btn-dark btn-sm" href="https://www.google.com/maps/place/IFZA+Business+Park/@25.1186106,55.3777212,17z/data=!3m1!4b1!4m6!3m5!1s0x3e5f6f9f1fbfb607:0x4db0a2f5f59532d9!8m2!3d25.1186106!4d55.3777212!16s%2Fg%2F11h79rl5g_?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">Open in Maps</a>
                         </div>
                     </div>
 
